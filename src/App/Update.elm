@@ -4,6 +4,6 @@ import App.Model exposing (Model)
 import App.Msg exposing (Msg(..))
 
 
-update : Msg -> Model -> Model
+update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
-    model
+    ( model, Cmd.none )
